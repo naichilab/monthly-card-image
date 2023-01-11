@@ -1,11 +1,19 @@
-.cards {
-  display: flex;
-  gap: 12px;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
   .monthlycard {
     width: 512px;
     height: 512px;
     border: 1px solid #000;
     font-family: "Noto Sans Tangsa", sans-serif;
+    background-image: url("/p_card_ja.png");
+    background-size: cover;
+
+    background-color:whiteblue;
+    color:red;
 
     display: flex;
     justify-content: center;
@@ -37,11 +45,3 @@
     }
   }
 
-  .mihon {
-    width: 512px;
-    height: 512px;
-    border: 1px solid #000;
-    background-image: url("/p_card_ja.png");
-    background-size: cover;
-  }
-}

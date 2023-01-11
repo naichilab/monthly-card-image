@@ -1,15 +1,25 @@
-.cards {
+body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.cards .monthlycard {
+.monthlycard {
   width: 512px;
   height: 512px;
   border: 1px solid #000;
   font-family: "Noto Sans Tangsa", sans-serif;
+  background-image: url("/p_card_ja.png");
+  background-size: cover;
+  background-color: whiteblue;
+  color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +31,7 @@
           align-items: center;
 }
 
-.cards .monthlycard .labels {
+.monthlycard .labels {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,28 +48,20 @@
   height: 360px;
 }
 
-.cards .monthlycard .labels .month_text {
+.monthlycard .labels .month_text {
   font-weight: 700;
   font-size: 33px;
   letter-spacing: 1.5px;
 }
 
-.cards .monthlycard .labels .month_number {
+.monthlycard .labels .month_number {
   font-weight: 700;
   font-size: 170px;
 }
 
-.cards .monthlycard .labels .year {
+.monthlycard .labels .year {
   font-weight: 700;
   font-size: 33px;
   letter-spacing: 2.5px;
-}
-
-.cards .mihon {
-  width: 512px;
-  height: 512px;
-  border: 1px solid #000;
-  background-image: url("/p_card_ja.png");
-  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
