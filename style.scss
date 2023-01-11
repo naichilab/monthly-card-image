@@ -1,0 +1,47 @@
+.cards {
+  display: flex;
+  gap: 12px;
+  .monthlycard {
+    width: 512px;
+    height: 512px;
+    border: 1px solid #000;
+    font-family: "Noto Sans Tangsa", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .labels {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 360px;
+
+      .month_text {
+        font-weight: 700;
+        font-size: 33px;
+        letter-spacing: 1.5px;
+      }
+
+      .month_number {
+        font-weight: 700;
+        font-size: 170px;
+      }
+
+      .year {
+        font-weight: 700;
+        font-size: 33px;
+        letter-spacing: 2.5px;
+      }
+    }
+  }
+
+  .mihon {
+    width: 512px;
+    height: 512px;
+    border: 1px solid #000;
+    background-image: url("/p_card_ja.png");
+    background-size: cover;
+  }
+}

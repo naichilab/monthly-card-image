@@ -1,0 +1,65 @@
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.cards .monthlycard {
+  width: 512px;
+  height: 512px;
+  border: 1px solid #000;
+  font-family: "Noto Sans Tangsa", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards .monthlycard .labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 360px;
+}
+
+.cards .monthlycard .labels .month_text {
+  font-weight: 700;
+  font-size: 33px;
+  letter-spacing: 1.5px;
+}
+
+.cards .monthlycard .labels .month_number {
+  font-weight: 700;
+  font-size: 170px;
+}
+
+.cards .monthlycard .labels .year {
+  font-weight: 700;
+  font-size: 33px;
+  letter-spacing: 2.5px;
+}
+
+.cards .mihon {
+  width: 512px;
+  height: 512px;
+  border: 1px solid #000;
+  background-image: url("/p_card_ja.png");
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
