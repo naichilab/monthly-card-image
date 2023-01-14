@@ -1,6 +1,7 @@
 const { series, parallel, src, dest, watch } = require('gulp');
 const sass = require("gulp-sass")(require("sass"));
 const ts = require("gulp-typescript");
+const tsProject = ts.createProject('tsconfig.json');
 const browserSync = require("browser-sync");
 
 const dir = {
@@ -26,7 +27,7 @@ function compileSass() {
 
 function buildTs() {
     return src(dir.script.src)
-        .pipe(ts({}))
+        .pipe(tsProject())
         .pipe(dest(dir.script.dist));
 }
 
