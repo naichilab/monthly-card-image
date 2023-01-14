@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "html2canvas": "^1.4.1"
-  }
+  },
+  "name": "monthly-card-image",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
