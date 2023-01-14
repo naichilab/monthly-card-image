@@ -1,7 +1,7 @@
-import html2canvas from "html2canvas/dist/html2canvas.min.js";
+import html2canvas from "html2canvas";
 
-function formatDate(date, format) {
-  format = format.replace(/yyyy/g, date.getFullYear());
+function formatDate(date: Date, format: string) {
+  format = format.replace(/yyyy/g, String(date.getFullYear()));
   format = format.replace(/MM/g, ("0" + (date.getMonth() + 1)).slice(-2));
   format = format.replace(/dd/g, ("0" + date.getDate()).slice(-2));
   format = format.replace(/HH/g, ("0" + date.getHours()).slice(-2));
@@ -11,7 +11,7 @@ function formatDate(date, format) {
   return format;
 }
 
-function getMonthName(month) {
+function getMonthName(month: number) {
   const months = [
     "January",
     "February",
@@ -65,7 +65,7 @@ function selectedMonthChanged() {
 }
 
 function downloadCardImage() {
-  html2canvas(document.querySelector("#capture"), {
+  html2canvas(<HTMLElement>document.querySelector("#capture"), {
     scale: 5,
   }).then((canvas) => {
     let downloadEle = document.createElement("a");

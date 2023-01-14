@@ -1,8 +1,11 @@
 "use strict";
-exports.__esModule = true;
-var html2canvas_min_js_1 = require("html2canvas/dist/html2canvas.min.js");
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const html2canvas_1 = __importDefault(require("html2canvas"));
 function formatDate(date, format) {
-    format = format.replace(/yyyy/g, date.getFullYear());
+    format = format.replace(/yyyy/g, String(date.getFullYear()));
     format = format.replace(/MM/g, ("0" + (date.getMonth() + 1)).slice(-2));
     format = format.replace(/dd/g, ("0" + date.getDate()).slice(-2));
     format = format.replace(/HH/g, ("0" + date.getHours()).slice(-2));
@@ -12,7 +15,7 @@ function formatDate(date, format) {
     return format;
 }
 function getMonthName(month) {
-    var months = [
+    const months = [
         "January",
         "February",
         "March",
@@ -29,7 +32,7 @@ function getMonthName(month) {
     return months[month - 1];
 }
 function setCurrentMonth() {
-    var monthInput = (document.getElementsByClassName("js_monthInput")[0]);
+    let monthInput = (document.getElementsByClassName("js_monthInput")[0]);
     monthInput.value = formatDate(new Date(), "yyyy-MM");
     monthInput.value = "2022-12";
     selectedMonthChanged();
@@ -39,13 +42,13 @@ function getInputMonthValue() {
         .value;
 }
 function selectedMonthChanged() {
-    var inputValue = getInputMonthValue();
+    const inputValue = getInputMonthValue();
     if (inputValue == "") {
         (document.getElementsByClassName("js_downloadButton")[0]).disabled = true;
     }
     else {
-        var year = Number(inputValue.substr(0, 4));
-        var month = Number(inputValue.substr(5, 2));
+        const year = Number(inputValue.substr(0, 4));
+        const month = Number(inputValue.substr(5, 2));
         document.getElementsByClassName("js_monthLabel")[0].innerHTML =
             getMonthName(month);
         document.getElementsByClassName("js_month")[0].innerHTML = String(month);
@@ -54,12 +57,12 @@ function selectedMonthChanged() {
     }
 }
 function downloadCardImage() {
-    (0, html2canvas_min_js_1["default"])(document.querySelector("#capture"), {
-        scale: 5
-    }).then(function (canvas) {
-        var downloadEle = document.createElement("a");
+    (0, html2canvas_1.default)(document.querySelector("#capture"), {
+        scale: 5,
+    }).then((canvas) => {
+        let downloadEle = document.createElement("a");
         downloadEle.href = canvas.toDataURL("image/png");
-        downloadEle.download = "MonthlyCard_".concat(getInputMonthValue(), ".png");
+        downloadEle.download = `MonthlyCard_${getInputMonthValue()}.png`;
         downloadEle.click();
     });
 }
