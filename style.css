@@ -11,15 +11,16 @@ body {
           align-items: center;
 }
 
+.monthlycard_wrapper {
+  border: 1px solid #ddd;
+}
+
 .monthlycard {
-  width: 512px;
-  height: 512px;
-  border: 1px solid #000;
+  width: 320px;
+  height: 320px;
   font-family: "Noto Sans Tangsa", sans-serif;
-  background-image: url("/p_card_ja.png");
-  background-size: cover;
-  background-color: whiteblue;
-  color: red;
+  background-color: white;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,23 +46,21 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 360px;
+  height: 220px;
 }
 
 .monthlycard .labels .month_text {
   font-weight: 700;
-  font-size: 33px;
-  letter-spacing: 1.5px;
+  font-size: 20px;
 }
 
 .monthlycard .labels .month_number {
   font-weight: 700;
-  font-size: 170px;
+  font-size: 110px;
 }
 
 .monthlycard .labels .year {
   font-weight: 700;
-  font-size: 33px;
-  letter-spacing: 2.5px;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

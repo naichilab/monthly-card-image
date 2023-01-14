@@ -1,27 +1,34 @@
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>マンスリーカード</title>
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@400;500;600;700&display=swap"
-        rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <h1>ましかくプリント用マンスリーカード</h1>
-    <div id="capture" class="monthlycard">
+    <div class="monthlycard_wrapper">
+      <div id="capture" class="monthlycard">
         <div class="labels">
-            <div class="month_text">November</div>
-            <div class="month_number">11</div>
-            <div class="year">2022</div>
+          <div class="month_text js_monthLabel">November</div>
+          <div class="month_number js_month">11</div>
+          <div class="year js_year">2022</div>
         </div>
+      </div>
     </div>
-    <input type="month" onchange="changed()" />
-    <input type="button" value="ダウンロード" onclick="download()" />
+    <input
+      class="month js_monthInput"
+      type="month"
+      onchange="selectedMonthChanged()"
+    />
+    <input class="js_downloadButton""" type="button" value="ダウンロード"
+    onclick="downloadCardImage()" />
     <script src="./main.js"></script>
     <script src="./node_modules/html2canvas/dist/html2canvas.min.js" />
-</body>
-
+  </body>
 </html>
