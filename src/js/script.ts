@@ -77,4 +77,16 @@ function downloadCardImage() {
 
 document.addEventListener("DOMContentLoaded", function () {
   setCurrentMonth();
+
+  document
+    .getElementsByClassName("js_monthInput")[0]
+    .addEventListener("change", (event) => {
+      selectedMonthChanged();
+    });
+
+  document
+    .getElementsByClassName("js_downloadButton")[0]
+    .addEventListener("click", (event) => {
+      downloadCardImage();
+    });
 });
