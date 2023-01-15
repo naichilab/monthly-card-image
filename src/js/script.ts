@@ -1,3 +1,4 @@
+import "../css/style.scss";
 import html2canvas from "html2canvas";
 
 function formatDate(date: Date, format: string) {

@@ -1,0 +1,70 @@
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/style.scss ***!
+  \*************************************************************************************************************/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.monthlycard_wrapper {
+  border: 1px solid #ddd;
+}
+
+.monthlycard {
+  width: 320px;
+  height: 320px;
+  font-family: "Noto Sans Tangsa", sans-serif;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.monthlycard .labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 220px;
+}
+.monthlycard .labels .month_text {
+  font-weight: 700;
+  font-size: 20px;
+}
+.monthlycard .labels .month_number {
+  font-weight: 700;
+  font-size: 110px;
+}
+.monthlycard .labels .year {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+input[type=month] {
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  margin: 12px 0;
+  padding: 10px;
+  font-family: arial, sans-serif;
+  font-size: 1.3em;
+  color: #aaa;
+  width: 100%;
+}
+
+input[type=button] {
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  margin: 12px 0;
+  padding: 10px;
+  font-family: arial, sans-serif;
+  font-size: 1.3em;
+  width: 100%;
+}
+
+.hoge {
+  background-color: yellow;
+  margin: 20px 0;
+}
+
+/*# sourceMappingURL=style.css.map*/
