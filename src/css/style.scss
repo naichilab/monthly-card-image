@@ -44,7 +44,6 @@ h2 {
     border-radius: 3px;
     padding: 10px;
     font-size: 1.3em;
-    // color: #aaa;
     width: 100%;
   }
 
@@ -119,9 +118,13 @@ h2 {
 .footer {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
 
   border-top: 1px solid #ddd;
   margin-top: 24px;
   padding-top: 12px;
+
+  a.copyright {
+    text-decoration: none;
+  }
 }
