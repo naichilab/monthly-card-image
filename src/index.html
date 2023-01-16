@@ -1,33 +1,51 @@
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>マンスリーカード</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <h1>ましかくプリント用マンスリーカード</h1>
-    <div class="monthlycard_wrapper">
-      <div id="capture" class="monthlycard">
-        <div class="labels">
-          <div class="month_text js_monthLabel">November</div>
-          <div class="month_number js_month">11</div>
-          <div class="year js_year">2022</div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>マンスリーカード</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>マンスリーカード作成</h1>
+    <h2>概要</h2>
+  <div class="introduction">
+    <p><a href="https://mitene.us/" target="_blank">家族アルバム
+        みてね</a>の写真プリントにて、過去分のマンスリーカードが印刷できなかったので画像データを作成するツールを作りました。他の写真と同様に注文することで任意の年月のマンスリーカードを作成できます。</p>
+  </div>
+    <h2>注意事項</h2>
+  <div class="terms">
+    <ul>
+      <li>本ツールは<a href="https://mitene.us/" target="_blank">家族アルバム みてね</a>とは無関係な非公式のツールです。</li>
+      <li>本ツールに関する問い合わせを株式会社ミクシィおよび<a href="https://mitene.us/" target="_blank">家族アルバム みてね</a>に送らないでください。</li>
+      <li>本ツールの使用によって生じたいかなる問題についても責任は取れません。自己責任で利用してください。</li>
+    </ul>
+  </div>
+
+  <h2>使い方</h2>
+  <div class="howtouse">
+    <ol>
+      <li>年月を選択する</li>
+      <li>プレビューを確認する</li>
+      <li>ダウンロードする</li>
+    </ol>
+  </div>
+  <div class="monthlycard_wrapper">
+    <div id="capture" class="monthlycard">
+      <div class="labels">
+        <div class="month_text js_monthLabel">November</div>
+        <div class="month_number js_month">11</div>
+        <div class="year js_year">2022</div>
       </div>
     </div>
-    <input
-      class="month js_monthInput"
-      type="month"
-    />
-    <input
-      class="js_downloadButton"
-      type="button"
-      value="ダウンロード"
-    /> 
-  </body>
+  </div>
+  <input class="month js_monthInput" type="month" />
+  <input class="js_downloadButton" type="button" value="ダウンロード" />
+  <iframe
+    src="https://ghbtns.com/github-btn.html?user=naichilab&repo=monthly-card-image&type=star&count=true&size=large"
+    frameborder="0" scrolling="0" height="30" title="GitHub"></iframe>
+    <iframe src="https://ghbtns.com/github-btn.html?user=naichilab&type=sponsor&size=large" frameborder="0" scrolling="0" height="30" title="GitHub"></iframe>
+</body>
+
 </html>
