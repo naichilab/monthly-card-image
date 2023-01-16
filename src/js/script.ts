@@ -71,7 +71,7 @@ function downloadCardImage() {
   }).then((canvas) => {
     let downloadEle = document.createElement("a");
     downloadEle.href = canvas.toDataURL("image/png");
-    downloadEle.download = `MonthlyCard_${getInputMonthValue()}.png`;
+    downloadEle.download = `mc${getInputMonthValue().replace("-", "")}.png`;
     downloadEle.click();
   });
 }
